@@ -38,24 +38,24 @@ Takım 92
 <summary>Sprint 1</summary>
 
 ```
-- **Sprint Notları**: 
+- Sprint Notları: 
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+- Sprint içinde tamamlanması tahmin edilen puan: 
 
-- **Puan tamamlama mantığı**: 
+- Puan tamamlama mantığı: 
 
 
-- **Daily Scrum**:
-- **Sprint board update**:
-- **Sprint Review**: 
+- Daily Scrum:
+- Sprint board update:
+- Sprint Review: 
 Alınan kararlar:
 Sprint Review katılımcıları: 
 
-- **Sprint Retrospective:**
+- Sprint Retrospective:
   - 
   - 
   - 
--**Diğer Notlar**:
+-Diğer Notlar:
 - N/A
 ```
 </details>
