@@ -32,7 +32,7 @@ Takım 92
 
 --------
 
-##Sprintler
+## Sprintler
 
 <details>
 <summary>Sprint 1</summary>
