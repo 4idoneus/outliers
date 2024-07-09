@@ -31,7 +31,8 @@ Takım 92
 
 ## Oyun Backlog URL
 https://miro.com/welcomeonboard/UFl1MFdNQVdnOXEyaW5JT1lmTTFvYUptSTI3em1IT0JLRjRJeFNQdEJST3hlbWtUeXF6QVFuekdJN2xyS05ndHwzMDc0NDU3MzY0MjExNDg2NzgwfDI=?share_link_id=967519597210
-----------------
+## Toplantı Notları / Figma Çalışma Dosyası URL
+https://www.figma.com/board/02wSlow9A2dkejhsQv0u5R/OUA--Unity-92?node-id=0-1&t=QLUQjmG1o6KSLLX2-0
 
 ## Sprintler
 
