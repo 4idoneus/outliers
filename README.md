@@ -37,7 +37,7 @@ https://miro.com/welcomeonboard/UFl1MFdNQVdnOXEyaW5JT1lmTTFvYUptSTI3em1IT0JLRjRJ
 
 ### Sprint 1
 
-- Sprint Notları:
+- **Sprint Notları:**
   -- Takım üyeleri tanıştı
   -- Oyunu geliştirecek developerlar belirlendi
   -- Oyun teması ve ana karakter asseti belirlendi
@@ -45,20 +45,21 @@ https://miro.com/welcomeonboard/UFl1MFdNQVdnOXEyaW5JT1lmTTFvYUptSTI3em1IT0JLRjRJ
 
 - Sprint içinde tamamlanması tahmin edilen puan: 40 puan
 
-- Puan tamamlama mantığı: İş parçalarına 1-2-3-5-8-13-21 puan arasından işin büyüklüğüne ve harcanacak olan efora göre bir puan seçerek sprintte alacağımız puanı belirliyoruz. 2. Sprintten itibaren ortalama kaç puanlık bir iş alacağımızı anlamak amacıyla ilk sprint bir puan tahmini ile başlamadık. 
+- **Puan tamamlama mantığı:** İş parçalarına 1-2-3-5-8-13-21 puan arasından işin büyüklüğüne ve harcanacak olan efora göre bir puan seçerek sprintte alacağımız puanı belirliyoruz. 2. Sprintten itibaren ortalama kaç puanlık bir iş alacağımızı anlamak amacıyla ilk sprint bir puan tahmini ile başlamadık. 
 **Update: İlk sprint 42 puan tamamlayabildik
 
 
-- Daily Scrum:
-- Sprint board update:
+- **Daily Scrum:**
+- **Sprint board update:**
 ![image](https://github.com/4idoneus/outliers/assets/175143312/824d81d5-d167-4d72-85bd-8a88f03502a1)
 ![image](https://github.com/4idoneus/outliers/assets/175143312/e3982694-aeac-42f7-961f-c722d08eddd9)
 ![image](https://github.com/4idoneus/outliers/assets/175143312/6ad48e80-3fa1-4905-971b-f46cebee4d04)
 ![image](https://github.com/4idoneus/outliers/assets/175143312/6d6fee8c-6f86-4dbc-8f33-1d634a7cc78e)
 
 
-- Sprint Review: 
- Alınan kararlar:
+- **Sprint Review:**
+
+*Alınan kararlar:*
 
  - Oyun fikirleri ve oyunun nasıl bir hikaye düzleminde olacağı tartışıldı
  - Platformer tarzında 2D Pixel Art tasarımlı bir oyun geliştirilmesine karar verildi
@@ -72,13 +73,13 @@ https://miro.com/welcomeonboard/UFl1MFdNQVdnOXEyaW5JT1lmTTFvYUptSTI3em1IT0JLRjRJ
   -- Son sahnede Kurt ile savaşacağı bir kuleye girer. 3 hakkı vardır. Kurdu öldürebilirse --> Winner ; Kurdu öldüremezse    
       -- > Game Over
 
-Sprint Review katılımcıları: Koray Ateşsönmez, İlknur Nazlı Koşar, İpek Naz Sipahi, Hilal Karakaş Sağır
+*Sprint Review katılımcıları:* Koray Ateşsönmez, İlknur Nazlı Koşar, İpek Naz Sipahi, Hilal Karakaş Sağır
 
-- Sprint Retrospective:
+- **Sprint Retrospective:**
   - Takım içi iletişim ve işbirliği değerlendirildi
   - İlerleme hızı ve görev tamamlama oranları tartışıldı
   - Gelecek sprintlerde yapılacak iyileştirmeler belirlendi
--Diğer Notlar:
+- **Diğer Notlar:**
 - N/A
 
 -------------
