@@ -16,21 +16,22 @@ Takım 92
 - Path of Truth
 
 ## Oyun Açıklaması
- - Herkes "Kırmızı Başlıklı Kız" hikayesini bilir. Peki bildikleri hikaye gerçek midir? Kırmızı Başlıklı Kız'a "Babaanne"ye olan yolculuğunda eşlik edeceğimiz bu 2D platformer oyunda bize katılın.
+ - Herkes "Kırmızı Başlıklı Kız" hikayesini bilir. Peki bildikleri hikaye gerçek midir? Kırmızı Başlıklı Kız'a "Babaanne"ye olan yolculuğunda eşlik edeceğimiz bu 2D platformer Path of Truth oyunumuzda bize katılın. Bu yolculukta hem bir platformer oyun oynayacak hem de bildiğinizi sandığınız hikayenin bilmediğiniz yönleri ile karşılaşın!
 
 ## Oyun Özellikleri
 - Kontrol edilebilir ana karakter.
 - NPC'ler.
-- Şavaşılabilir düşmanlar.
-- Toplanabilir itemler. 
+- Savaşılabilir düşmanlar.
+- Toplanabilir itemler.
+- Engeller. 
 
 ## Hedef Kitle
 - Genel oyuncu kitlesi
 - 14 - 35 yaş arası kullanıcılar
 
 ## Oyun Backlog URL
-
---------
+https://miro.com/welcomeonboard/UFl1MFdNQVdnOXEyaW5JT1lmTTFvYUptSTI3em1IT0JLRjRJeFNQdEJST3hlbWtUeXF6QVFuekdJN2xyS05ndHwzMDc0NDU3MzY0MjExNDg2NzgwfDI=?share_link_id=967519597210
+----------------
 
 ## Sprintler
 
