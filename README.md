@@ -34,10 +34,8 @@ Takım 92
 
 ## Sprintler
 
-<details>
-<summary>Sprint 1</summary>
+### Sprint 1
 
-```
 - Sprint Notları:
   -- Takım üyeleri tanıştı
   -- Oyunu geliştirecek developerlar belirlendi
@@ -74,5 +72,7 @@ Sprint Review katılımcıları: Koray Ateşsönmez, İlknur Nazlı Koşar, İpe
   - Gelecek sprintlerde yapılacak iyileştirmeler belirlendi
 -Diğer Notlar:
 - N/A
-```
-</details>
+
+-------------
+
+### Sprint 2
