@@ -16,7 +16,7 @@ Takım 92
 - Path of Truth
 
 ## Oyun Açıklaması
- - Herkes "Kırmızı Başlıklı Kız" hikayesini bilir. Peki bildikleri hikaye gerçek midir? Kırmızı Başlıklı Kız'a "Babaanne"ye olan yolculuğunda eşlik edeceğimiz bu 2D platformer Path of Truth oyunumuzda bize katılın. Bu yolculukta hem bir platformer oyun oynayın hem de bildiğinizi sandığınız hikayenin bilmediğiniz yönleri ile karşılaşın!
+ - Herkes "Kırmızı Başlıklı Kız" hikayesini bilir. Peki bildikleri hikaye gerçek midir? Kırmızı Başlıklı Kız'a "Babaanne"ye olan yolculuğunda eşlik edeceğimiz bu 2D  Path of Truth oyunumuzda bize katılın. Bu yolculukta hem bir  oyun oynayın hem de bildiğinizi sandığınız hikayenin bilmediğiniz yönleri ile karşılaşın!
 
 ## Oyun Özellikleri
 - Kontrol edilebilir ana karakter.
