@@ -4,7 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< Updated upstream
   - collectable
+=======
+  - House
+  - Floor
+  - Audio
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -12,14 +18,14 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Background
+  - Ground Base
+  - Cround Detail
+  - Path
+  - Walkable Structures
+  - Vegitate
+  - Structures
+  - Structures Details
   - 
   - 
   - 
@@ -41,4 +47,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2775486985
+    locked: 0
+  - name: Ground
+    uniqueID: 18775613
+    locked: 0
+  - name: Ground Decors
+    uniqueID: 3282719059
+    locked: 0
+  - name: Player
+    uniqueID: 132213187
     locked: 0
