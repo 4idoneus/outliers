@@ -86,3 +86,39 @@ https://www.figma.com/board/02wSlow9A2dkejhsQv0u5R/OUA--Unity-92?node-id=0-1&t=Q
 -------------
 
 ### Sprint 2
+
+- **Sprint 2 Toplantıları Notları:**
+  -- Oyunun izometrik assetler ile ilerlenmesine karar verildi.
+  -- Kurt ile savaşılacak sahnenin ormanda ağaçların içerisinde bir alan level design ile yapılmasına karar verildi
+  -- 2. Sprintte: - 1- Sahnenin Oluşturulması (21p) - 2- MC Temel mekaniklerinin oluşturulması (21p) - 3- Oyun UI'larının oluşturulması-I (21p)  storyleri ve bu storylerin altında bulunan taskların alınmasına karar verildi
+
+- Sprint içinde tamamlanması planlanan puan: 63 puan
+
+- **Puan tamamlama mantığı:** Sahnelerin Oluşturulması (21p) + MC Temel mekaniklerinin oluşturulması (21p) + Oyun UI'larının oluşturulması (21p)
+
+
+- **Daily Scrum:**
+![image](https://github.com/user-attachments/assets/9c9d197e-473d-45bb-87fc-2126385477b7)
+
+
+- **Sprint board update:**
+![image](https://github.com/user-attachments/assets/2b263f71-cb76-4793-afa8-9e23e626379f)
+![image](https://github.com/user-attachments/assets/e1b34fc5-07d5-4112-a8b4-461d6550506d)
+
+
+- **Sprint Review:**
+
+*Alınan kararlar:*
+
+ - Köyden ormana açılan ve ormandan da babanne sahnesine açılan kapılara puan/gerekli item logici eklenecek.
+ - Kırmızı iksirin 25 puan; Mavi iksirin 50 puan can vereceğine karar verildi.
+ - 3. Sprint başlamadan önce bir son durum toplantısı ya yazılı ya da video call şeklinde yapılacak (Sprint review + Sprint retro için)
+
+*Sprint Review katılımcıları:* Koray Ateşsönmez, İlknur Nazlı Koşar, İpek Naz Sipahi, Hilal Karakaş Sağır
+
+- **Sprint Retrospective:**
+  - İlerleme hızı ve görev tamamlama oranları tartışıldı. Son sprinte kalan işler değerlendirildi
+  - Toplantılar dışında gün içinde yazılı bir şekilde WhatsApp üzerinden de iletişime geçilmesi gerektiği konuşuldu.
+    
+- **Diğer Notlar:**
+- N/A
