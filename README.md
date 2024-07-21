@@ -105,6 +105,11 @@ https://www.figma.com/board/02wSlow9A2dkejhsQv0u5R/OUA--Unity-92?node-id=0-1&t=Q
 ![image](https://github.com/user-attachments/assets/2b263f71-cb76-4793-afa8-9e23e626379f)
 ![image](https://github.com/user-attachments/assets/e1b34fc5-07d5-4112-a8b4-461d6550506d)
 
+- **Oyun Ekranları:**
+
+![image](https://github.com/user-attachments/assets/bf81331a-ca15-4082-916b-530f9d5a071f)
+
+
 
 - **Sprint Review:**
 
