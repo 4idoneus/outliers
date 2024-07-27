@@ -1,32 +1,3 @@
-/*
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
-
-
-public class VolumeSettings : MonoBehaviour
-{
-    public static float musicVolume { get; private set; }
-    public static float soundEffectsVolume { get; private set; }
-
-    [SerializeField] private TextMeshProUGUI musicSliderText;
-    [SerializeField] private TextMeshProUGUI soundEffectsSliderText;
-    public void OnMusicSliderValueChange(float value)
-    {
-        musicVolume = value;
-        musicSliderText.text = ((int)(value * 100)).ToString();
-        AudioManager.Instance.UpdateMixerVolume();
-
-    }
-    public void OnSoundEffectsSliderValueChange(float value)
-    {
-        soundEffectsVolume = value;
-        soundEffectsSliderText.text = ((int)(value * 100)).ToString();
-        AudioManager.Instance.UpdateMixerVolume();
-    }
-}
-*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -47,6 +18,15 @@ public class VolumeSettings : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+
+            // Set default values if not already set
+            if (!PlayerPrefs.HasKey("MusicVolume"))
+                PlayerPrefs.SetFloat("MusicVolume", 0.5f);
+            if (!PlayerPrefs.HasKey("SFXVolume"))
+                PlayerPrefs.SetFloat("SFXVolume", 0.5f);
+
+            musicVolume = PlayerPrefs.GetFloat("MusicVolume");
+            soundEffectsVolume = PlayerPrefs.GetFloat("SFXVolume");
         }
         else
         {
@@ -57,6 +37,7 @@ public class VolumeSettings : MonoBehaviour
     public void OnMusicSliderValueChange(float value)
     {
         musicVolume = value;
+        PlayerPrefs.SetFloat("MusicVolume", value);
         musicSliderText.text = ((int)(value * 100)).ToString();
         AudioManager.Instance.UpdateMixerVolume();
     }
@@ -64,6 +45,7 @@ public class VolumeSettings : MonoBehaviour
     public void OnSoundEffectsSliderValueChange(float value)
     {
         soundEffectsVolume = value;
+        PlayerPrefs.SetFloat("SFXVolume", value);
         soundEffectsSliderText.text = ((int)(value * 100)).ToString();
         AudioManager.Instance.UpdateMixerVolume();
     }
