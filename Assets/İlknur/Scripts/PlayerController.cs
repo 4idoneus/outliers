@@ -1,6 +1,9 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,16 +13,17 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
     Animator anim;
     bool facingRight = true;
+    public Image health;
+    private bool isAttack = false;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim= GetComponent<Animator>();
+        TakeDamage();
     }
 
-    // Update is called once per frame
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -27,10 +31,17 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             anim.SetTrigger("isAttack");
+            isAttack = true;
+            StartCoroutine(attack());
+
+
         }
     }
     void FixedUpdate()
     {
+        if (isAttack) {
+            return;
+        }
         rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
         if (movement.y != 0 || movement.x != 0)
         {
@@ -58,29 +69,26 @@ public class PlayerController : MonoBehaviour
     {
         transform.Rotate(0, 180f, 0);
     }
-   
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "collectable")
-        {
-
-            Destroy(collision.gameObject);
-
-        }
-    }
     void TakeDamage()
     {
+        HealthManager.instance.HealthCheck();
         anim.SetTrigger("isDamaged");
-       
-    }
-    void DeadFunc()
-    {
+        dataManager.health -= dataManager.enemyDamage;
+        health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
+
         if (dataManager.health <= 0)
         {
-            Time.timeScale = 0;
-            //dead ui gelecek
+            dataManager.health = 0;
+            HealthManager.instance.HealthCheck();
+            dataManager.extraHealth--;
+            HealthManager.instance.DeadFunc();
+            UIManager.instance.deathPanel.SetActive(true);
         }
+
     }
-
-
+    IEnumerator attack()
+    {
+        yield return new WaitForSeconds(1);
+        isAttack = false;
+    }
 }

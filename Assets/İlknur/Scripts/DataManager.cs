@@ -8,6 +8,7 @@ public class DataManager : ScriptableObject
     public int maxHealth;
     public int health;
     public int damage;
+    public int enemyDamage;
+    public int extraHealth;
 
- 
 }
