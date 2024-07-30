@@ -16,12 +16,17 @@ public class PlayerController : MonoBehaviour
     public Image health;
     private bool isAttack = false;
 
+    //Ýpek Hitbox Edit
+    public GameObject Hitbox;
+    Collider2D hitboxCollider;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         TakeDamage();
+        //Ýpek Hitbox Edit 
+        hitboxCollider = Hitbox.GetComponent<Collider2D>();
     }
 
     void Update()
