@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0814ec2aee1118747942236cf51f85b0, type: 3}
+  m_Name: The Forgotten Heirloom
+  m_EditorClassIdentifier: 
+  images: {fileID: 21300000, guid: 6858a15e5082cf34b9ee3167e90403d3, type: 3}
+  titles: The Forgotten Heirloom
+  texts: This old, worn belt once belonged to your close friend Mark. He always carried
+    it because it was a gift from his father. When Mark vanished in the woods last
+    summer, everyone hoped he would somehow return. Now, finding this belt, you begin
+    to realize that Mark was actually a victim of the village's dark secret...

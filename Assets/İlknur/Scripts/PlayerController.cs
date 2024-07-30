@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim= GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         TakeDamage();
     }
 
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !isAttack)
         {
             anim.SetTrigger("isAttack");
             isAttack = true;
@@ -39,7 +39,8 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (isAttack) {
+        if (isAttack)
+        {
             return;
         }
         rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
@@ -57,13 +58,13 @@ public class PlayerController : MonoBehaviour
             flip();
             facingRight = !facingRight;
         }
-        else if(movement.x > 0 && !facingRight)
+        else if (movement.x > 0 && !facingRight)
         {
             flip();
             facingRight = !facingRight;
         }
 
-        
+
     }
     void flip()
     {
@@ -91,4 +92,30 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(1);
         isAttack = false;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "items")
+        {
+            UIManager.instance.ItemPanel.SetActive(true);
+            isAttack = true;
+            Destroy(collision.gameObject);
+            Time.timeScale = 0;
+        }
+
+    }
+    public void ItemPanelClose()
+    {
+
+        UIManager.instance.ItemPanel.SetActive(false);
+        StartCoroutine(wait());
+    }
+    IEnumerator wait()
+    {
+        yield return new WaitForEndOfFrame();
+        isAttack = false;
+        Time.timeScale = 1;
+    }
+
+
 }

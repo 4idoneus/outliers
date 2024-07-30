@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,6 +18,9 @@ public class UIManager : MonoBehaviour
     }
     public GameObject gameOverPanel;
     public GameObject deathPanel;
-
-
+    public Image ItemImage;
+    public TextMeshProUGUI Title;
+    public TextMeshProUGUI Content;
+    public GameObject ItemPanel;
+   
 }

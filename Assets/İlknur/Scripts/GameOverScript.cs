@@ -10,8 +10,6 @@ public class GameOverScript : MonoBehaviour
         SceneManager.LoadScene(3);
         gameObject.SetActive(false);
         Time.timeScale = 1.0f;
-
-
     }
     public void mainMenu()
     {
