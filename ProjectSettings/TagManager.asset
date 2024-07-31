@@ -7,6 +7,16 @@ TagManager:
   - items
   - BluePotion
   - RedPotion
+  - Ground
+  - Plants
+  - Buildings
+  - Border
+  - Babaanne
+  - "\u0130skelet"
+  - Mantar
+  - Goblin
+  - Water
+  - Gate
   layers:
   - Default
   - TransparentFX
