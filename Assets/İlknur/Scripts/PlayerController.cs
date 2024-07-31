@@ -107,6 +107,26 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             Time.timeScale = 0;
         }
+        if(collision.gameObject.tag == "RedPotion")
+        {
+            dataManager.health += 25;
+            Destroy(collision.gameObject);
+            if (dataManager.health >= 100)
+            {
+                dataManager.health = 100;
+            }
+            health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
+        }
+        if (collision.gameObject.tag == "BluePotion")
+        {
+            dataManager.health += 50;
+            Destroy(collision.gameObject);
+            if (dataManager.health >= 100)
+            {
+                dataManager.health = 100;
+            }
+            health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
+        }
 
     }
     public void ItemPanelClose()
