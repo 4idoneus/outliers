@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class İskelet : BaseEnemy
+public class Iskelet : BaseEnemy
 {
     [Header("İskelet Specific Stats")]
-    public float IskeletHealth = 100f;
-    public float IskeletMoveSpeed = 5f;
+    public float IskeletHealth = 20f;
+    public float IskeletMoveSpeed = 2f;
 
     protected override void Start()
     {
@@ -131,7 +131,7 @@ public class İskelet : BaseEnemy
         _animator.SetBool("isAlive", false);
         _rigidbody.velocity = Vector2.zero;
         _physicsCollider.enabled = false;
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
     }
 
