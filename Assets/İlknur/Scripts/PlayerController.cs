@@ -89,8 +89,18 @@ public class PlayerController : MonoBehaviour
             dataManager.extraHealth--;
             HealthManager.instance.DeadFunc();
             UIManager.instance.deathPanel.SetActive(true);
+            StartCoroutine(deathPanelWait());
+
         }
 
+
+    }
+    IEnumerator deathPanelWait()
+    {
+        yield return new WaitForSeconds(1.5f);
+        UIManager.instance.deathPanel.SetActive(false);
+        HealthManager.instance.HealthCheck();
+        health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
     }
     IEnumerator attack()
     {

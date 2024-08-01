@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   maxHealth: 100
-  health: 85
-  damage: 10
-  enemyDamage: 0
-  extraHealth: 2
+  health: 10
+  damage: 50
+  enemyDamage: 20
+  extraHealth: 3

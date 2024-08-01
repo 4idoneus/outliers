@@ -8,12 +8,19 @@ public class GameOverScript : MonoBehaviour
     public void playAgain()
     {
         SceneManager.LoadScene(3);
-        gameObject.SetActive(false);
+        StartCoroutine(wait());
         Time.timeScale = 1.0f;
     }
     public void mainMenu()
     {
+
+        SceneManager.LoadScene(0);
+        StartCoroutine(wait());
+    }
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(0.1f);
         gameObject.SetActive(false);
-        SceneManager.LoadScene(1);
+
     }
 }
