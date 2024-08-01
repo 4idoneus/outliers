@@ -17,6 +17,10 @@ TagManager:
   - Goblin
   - Water
   - Gate
+  - bread
+  - wood
+  - steak
+  - egg
   layers:
   - Default
   - TransparentFX

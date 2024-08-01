@@ -16,11 +16,16 @@ public class UIManager : MonoBehaviour
         instance = this;
 
     }
+
     public GameObject gameOverPanel;
     public GameObject deathPanel;
     public Image ItemImage;
     public TextMeshProUGUI Title;
     public TextMeshProUGUI Content;
     public GameObject ItemPanel;
-   
+    public TextMeshProUGUI pointText;
+    public GameObject pointBar;
+    public int point;
+
+
 }

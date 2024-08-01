@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   health: 10
-  damage: 50
-  enemyDamage: 20
+  damage: 10
+  enemyDamage: 10
   extraHealth: 3

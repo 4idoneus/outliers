@@ -10,6 +10,7 @@ public class GameOverScript : MonoBehaviour
         SceneManager.LoadScene(3);
         StartCoroutine(wait());
         Time.timeScale = 1.0f;
+       
     }
     public void mainMenu()
     {

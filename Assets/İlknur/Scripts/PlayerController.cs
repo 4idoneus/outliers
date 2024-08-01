@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamageable
 {
     Rigidbody2D rb;
     public DataManager dataManager;
@@ -16,15 +16,23 @@ public class PlayerController : MonoBehaviour
     public Image health;
     private bool isAttack = false;
 
+
     //Ýpek Hitbox Edit
     public GameObject Hitbox;
     Collider2D hitboxCollider;
 
+    public float Health { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+    public bool IsTargetable { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
     void Start()
     {
+
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        TakeDamage();
+        HealthManager.instance.HealthCheck();
+        health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
+        UIManager.instance.pointBar.SetActive(true);
+        UIManager.instance.pointText.text = UIManager.instance.point.ToString();
         //Ýpek Hitbox Edit 
         hitboxCollider = Hitbox.GetComponent<Collider2D>();
     }
@@ -75,33 +83,9 @@ public class PlayerController : MonoBehaviour
     {
         transform.Rotate(0, 180f, 0);
     }
-    void TakeDamage()
-    {
-        HealthManager.instance.HealthCheck();
-        anim.SetTrigger("isDamaged");
-        dataManager.health -= dataManager.enemyDamage;
-        health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
-
-        if (dataManager.health <= 0)
-        {
-            dataManager.health = 0;
-            HealthManager.instance.HealthCheck();
-            dataManager.extraHealth--;
-            HealthManager.instance.DeadFunc();
-            UIManager.instance.deathPanel.SetActive(true);
-            StartCoroutine(deathPanelWait());
-
-        }
 
 
-    }
-    IEnumerator deathPanelWait()
-    {
-        yield return new WaitForSeconds(1.5f);
-        UIManager.instance.deathPanel.SetActive(false);
-        HealthManager.instance.HealthCheck();
-        health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
-    }
+
     IEnumerator attack()
     {
         yield return new WaitForSeconds(1);
@@ -109,6 +93,30 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("bread"))
+        {
+            UIManager.instance.point += 10;
+            UIManager.instance.pointText.text = UIManager.instance.point.ToString();
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("wood"))
+        {
+            UIManager.instance.point += 20;
+            UIManager.instance.pointText.text = UIManager.instance.point.ToString();
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("egg"))
+        {
+            UIManager.instance.point += 30;
+            UIManager.instance.pointText.text = UIManager.instance.point.ToString();
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("steak"))
+        {
+            UIManager.instance.point += 40;
+            UIManager.instance.pointText.text = UIManager.instance.point.ToString();
+            Destroy(collision.gameObject);
+        }
 
         if (collision.gameObject.tag == "items")
         {
@@ -117,7 +125,7 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             Time.timeScale = 0;
         }
-        if(collision.gameObject.tag == "RedPotion")
+        if (collision.gameObject.tag == "RedPotion")
         {
             dataManager.health += 25;
             Destroy(collision.gameObject);
@@ -152,5 +160,45 @@ public class PlayerController : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void OnHit(float damage, Vector2 knockback)
+    {
+        TakeDamage(damage);
+    }
 
+    public void OnHit(float damage)
+    {
+        TakeDamage(damage);
+    }
+
+    public void OnObjectDestroyed()
+    {
+        throw new System.NotImplementedException();
+    }
+    private void TakeDamage(float damage)
+    {
+        HealthManager.instance.HealthCheck();
+        anim.SetTrigger("isDamaged");
+        dataManager.health -= (int)damage;
+        health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
+
+        if (dataManager.health <= 0)
+        {
+            dataManager.health = 0;
+            HealthManager.instance.HealthCheck();
+            dataManager.extraHealth--;
+            HealthManager.instance.DeadFunc();
+            Time.timeScale = 0;
+            UIManager.instance.deathPanel.SetActive(true);
+            StartCoroutine(deathPanelWait());
+        }
+    }
+    IEnumerator deathPanelWait()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        UIManager.instance.deathPanel.SetActive(false);
+        Time.timeScale = 1;
+        HealthManager.instance.HealthCheck();
+        health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
+
+    }
 }

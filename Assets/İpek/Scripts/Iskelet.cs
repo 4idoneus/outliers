@@ -131,6 +131,8 @@ public class Iskelet : BaseEnemy
         _animator.SetBool("isAlive", false);
         _rigidbody.velocity = Vector2.zero;
         _physicsCollider.enabled = false;
+        UIManager.instance.point += 50;
+        UIManager.instance.pointText.text = UIManager.instance.point.ToString();
         //Destroy(gameObject);
 
     }

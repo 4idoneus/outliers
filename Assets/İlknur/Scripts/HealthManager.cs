@@ -25,7 +25,10 @@ public class HealthManager : MonoBehaviour
         if (dataManager.extraHealth < 0 && dataManager.health <= 0)
         {
             Time.timeScale = 0;
+            UIManager.instance.pointBar.SetActive(false);
             UIManager.instance.gameOverPanel.SetActive(true);
+            dataManager.health = 100;
+            dataManager.extraHealth = 3;
         }
         else
         {
