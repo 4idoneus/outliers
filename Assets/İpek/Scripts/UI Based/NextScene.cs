@@ -6,18 +6,26 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
     // Gerekli puan eþiði
-    public int requiredPoints = 100; // Burada gerekli puan miktarýný ayarlayabilirsiniz.
+    public int requiredPoints = 100; // Gerekli puan miktarýný buradan ayarlayýn.
 
     // Sahne adý veya indeksi
     public string nextSceneName;
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Puan eþiði kontrolü
-        if (UIManager.instance.point >= requiredPoints)
+        // Sadece "Player" tag'ine sahip objeler tetikleyebilir.
+        if (other.CompareTag("Player"))
         {
-            // Bir sonraki sahneye geçiþ yap
-            LoadNextScene();
+            // Puan eþiði kontrolü
+            if (UIManager.instance.point >= requiredPoints)
+            {
+                // Bir sonraki sahneye geçiþ yap
+                LoadNextScene();
+            }
+            else
+            {
+                Debug.Log("Yetersiz puan! Ýhtiyacýnýz olan puan: " + requiredPoints);
+            }
         }
     }
 
