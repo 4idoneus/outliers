@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void Update()
     {
-        if (DialogueUI.IsOpen) return;
+       if (DialogueUI.IsOpen) return;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         if (Input.GetButtonDown("Fire1") && !isAttack)
@@ -241,5 +241,17 @@ public class PlayerController : MonoBehaviour, IDamageable
         HealthManager.instance.HealthCheck();
         health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
 
+    }
+    public void playAttackSound()
+    {
+        SoundManager.instance.audioSource.PlayOneShot(SoundManager.instance.sounds[0]);
+    }
+    public void playHitSound()
+    {
+        SoundManager.instance.audioSource.PlayOneShot(SoundManager.instance.sounds[1]);
+    }
+    public void playWalkSound()
+    {
+        SoundManager.instance.audioSource.PlayOneShot(SoundManager.instance.sounds[2]);
     }
 }
