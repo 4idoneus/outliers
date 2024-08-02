@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924b55de478531041a560f49afa787c8, type: 3}
+  m_Name: Listen Him
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "My eyes are feasting on you with great appetite. My wide mouth, large teeth,
+    and belly have been eagerly waiting for you. I\u2019m looking forward to devouring
+    you after such a long journey."
+  - "I\u2019ve led you down this dark path from the village. Now, the end of your
+    journey has arrived. Prepare for a dark ending, as I will take great pleasure
+    in greeting you here."
+  - "You\u2019re at the final stage of our dark ritual that has lasted for years.
+    Finding you here is a reward for both me and the village. If you\u2019re ready,
+    I\u2019m waiting"
+  responses:
+  - responseText: This must come to an End
+    dialogueObject: {fileID: 11400000, guid: 3413b5e3a840ba2439b08a720150a45a, type: 2}
+  speakers: 000000000000000000000000
