@@ -7,6 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour, IDamageable
 {
+    [SerializeField] private DialogueUI dialogueUI;
+    public DialogueUI DialogueUI => dialogueUI;
+    public IInteractable Interactable {  get; set; }
+
     Rigidbody2D rb;
     public DataManager dataManager;
     [SerializeField] private float moveSpeed;
@@ -46,8 +50,11 @@ public class PlayerController : MonoBehaviour, IDamageable
             anim.SetTrigger("isAttack");
             isAttack = true;
             StartCoroutine(attack());
+        }
 
-
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+                Interactable?.Interact(this);
         }
     }
     void FixedUpdate()

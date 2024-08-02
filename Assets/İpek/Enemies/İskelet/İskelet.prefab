@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5461027179216733121}
   - component: {fileID: 707426638090448360}
   - component: {fileID: 4375239945306120267}
-  - component: {fileID: 5581467368338778483}
   - component: {fileID: 7680994599565047788}
+  - component: {fileID: 7128447696053761424}
   m_Layer: 0
   m_Name: "\u0130skelet"
   m_TagString: "\u0130skelet"
@@ -138,29 +138,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5581467368338778483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27522363943122024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b6f791ac3cf70e428251371ad57ccd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 20
-  MoveSpeed: 2
-  AttackDamage: 5
-  AttackRange: 1
-  AttackInterval: 1
-  StopDistance: 1.5
-  IsTargetable: 1
-  DisableSimulation: 0
-  DetectionZone: {fileID: 1971515785225925643}
-  IskeletHealth: 20
-  IskeletMoveSpeed: 2
 --- !u!68 &7680994599565047788
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -209,6 +186,29 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &7128447696053761424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27522363943122024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6f791ac3cf70e428251371ad57ccd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 20
+  MoveSpeed: 5
+  AttackDamage: 5
+  AttackRange: 1
+  AttackInterval: 1
+  StopDistance: 1.5
+  IsTargetable: 1
+  DisableSimulation: 0
+  DetectionZone: {fileID: 1971515785225925643}
+  IskeletHealth: 20
+  IskeletMoveSpeed: 5
 --- !u!1 &1913411588058501275
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +271,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.16789274, y: 0.1706425}
