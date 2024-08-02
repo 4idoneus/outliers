@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924b55de478531041a560f49afa787c8, type: 3}
+  m_Name: Quest 2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '"Hello sweety. It''s always reassuring to see you. Your bravery is a beacon
+    of hope for our village."'
+  - 'The journey to the forest is fraught with danger, but I know you have the courage
+    to face it. Please, be cautious.
+
+'
+  - 'Our village is relying on you. You are our hope in these dark times.
+
+'
+  - Grandmother has sent word that she needs more supplies. She's asking for some
+    bread and steak this time.
+  - Could you collect 25 loaves of bread and 10 steaks? This task is crucial for
+    our village. I know you can handle it.
+  responses:
+  - responseText: Yes!
+    dialogueObject: {fileID: 0}
+  speakers: 0000000000000000000000000000000000000000

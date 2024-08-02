@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour, IDamageable
 {
     [SerializeField] private DialogueUI dialogueUI;
     public DialogueUI DialogueUI => dialogueUI;
-    public IInteractable Interactable {  get; set; }
-   
+    public IInteractable Interactable { get; set; }
+
 
     Rigidbody2D rb;
     public DataManager dataManager;
@@ -33,17 +33,24 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        if (dialogueUI == null)
+        {
+            Debug.LogError("DialogueUI is not assigned in PlayerController.");
+        }
+
         HealthManager.instance.HealthCheck();
         health.fillAmount = (float)dataManager.health / dataManager.maxHealth;
         UIManager.instance.pointBar.SetActive(true);
         UIManager.instance.pointText.text = UIManager.instance.point.ToString();
+
         //Ýpek Hitbox Edit 
         hitboxCollider = Hitbox.GetComponent<Collider2D>();
     }
 
     void Update()
     {
-       if (DialogueUI.IsOpen) return;
+        if (DialogueUI.IsOpen) return;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         if (Input.GetButtonDown("Fire1") && !isAttack)
@@ -55,7 +62,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-                Interactable?.Interact(this);
+            Interactable?.Interact(this);
         }
     }
     void FixedUpdate()

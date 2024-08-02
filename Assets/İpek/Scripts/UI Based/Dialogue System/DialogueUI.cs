@@ -18,6 +18,12 @@ public class DialogueUI : MonoBehaviour
     {
         TypewriterEffect = GetComponent<TypewriterEffect>();
         ResponseHandler = GetComponent<ResponseHandler>();
+
+        if (dialogueBox == null)
+        {
+            Debug.LogError("DialogueBox is not assigned in DialogueUI.");
+        }
+
         CloseDialogueBox();
     }
 

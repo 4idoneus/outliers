@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: "Assets/\u0130pek/Scenes/Babaanne.unity"
     guid: e95718efd3004764a88ca80797914507
   - enabled: 1
-    path: "Assets/\u0130pek/Scenes/Mektup.unity"
+    path: Assets/Scenes/Mektup.unity
     guid: ddb6c39eb631c1b4983d5be4a8023b00
   - enabled: 1
     path: "Assets/\u0130pek/Scenes/Mektup Sayfa 2.unity"

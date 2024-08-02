@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924b55de478531041a560f49afa787c8, type: 3}
+  m_Name: Quest 1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Oh oh oh, Red Riding Hood, seeing you is always a comfort. Our village is lucky
+    to have someone as brave as you.
+  - The path to the forest is long and dangerous. But for someone as courageous as
+    you, it's not insurmountable. I hope you stay safe on your journey.
+  - I know you need to be really strong. Our village has complete faith in you. We
+    have to rely on someone like you.
+  - Grandmother mentioned that her supplies are running low. We need some wood and
+    eggs to take to her.
+  - Could you collect 20 pieces of wood and 15 eggs? This task is very important
+    for our village. I believe you can do it!
+  responses:
+  - responseText: Accept Quest!
+    dialogueObject: {fileID: 0}
+  speakers: 0000000000000000000000000000000000000000
