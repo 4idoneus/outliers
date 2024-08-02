@@ -21,6 +21,10 @@ TagManager:
   - wood
   - steak
   - egg
+  - bag
+  - belt
+  - shoe
+  - book
   layers:
   - Default
   - TransparentFX

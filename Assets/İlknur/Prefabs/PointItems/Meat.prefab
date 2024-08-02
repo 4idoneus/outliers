@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &659252646523367693
+--- !u!1 &6825068505667345390
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4238986665553666279}
-  - component: {fileID: 9221677285392889546}
-  - component: {fileID: 5217675426852540250}
-  - component: {fileID: 3659264117698405926}
+  - component: {fileID: 1924119803391482239}
+  - component: {fileID: 2898507537388942013}
+  - component: {fileID: 1490037930055525393}
   m_Layer: 0
-  m_Name: Belt (1)
-  m_TagString: items
+  m_Name: Meat
+  m_TagString: steak
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4238986665553666279
+--- !u!4 &1924119803391482239
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659252646523367693}
+  m_GameObject: {fileID: 6825068505667345390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.0718, y: -1.1927525, z: 0}
-  m_LocalScale: {x: 2.0112, y: 2.0112, z: 2.0112}
+  m_LocalPosition: {x: 4.719204, y: 2.5441241, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &9221677285392889546
+--- !u!212 &2898507537388942013
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659252646523367693}
+  m_GameObject: {fileID: 6825068505667345390}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,8 +73,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6858a15e5082cf34b9ee3167e90403d3, type: 3}
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 21300000, guid: 14e62563269c11443b9c936be93b95f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,13 +85,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5217675426852540250
-BoxCollider2D:
+--- !u!68 &1490037930055525393
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659252646523367693}
+  m_GameObject: {fileID: 6825068505667345390}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -118,31 +117,21 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.10141045}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.7160505}
+  m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
---- !u!114 &3659264117698405926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659252646523367693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8691219d5d88c0f44bd89cad5a2ebf5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 6858a15e5082cf34b9ee3167e90403d3, type: 3}
-  titles: The Forgotten Heirloom
-  contents: adcfsdvsf
+  m_Points:
+  - {x: 0.46025324, y: 0.013816595}
+  - {x: 0.4841504, y: -0.26949143}
+  - {x: 0.3201089, y: -0.4282956}
+  - {x: 0.117920876, y: -0.43895245}
+  - {x: -0.12122774, y: -0.1975255}
+  - {x: -0.44849634, y: -0.07335043}
+  - {x: -0.45703173, y: 0.27596688}
+  - {x: -0.3298378, y: 0.44213057}
+  - {x: 0.17293024, y: 0.3944192}
+  - {x: 0.40638638, y: 0.14942932}
+  - {x: 0.5207248, y: -0.041449547}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

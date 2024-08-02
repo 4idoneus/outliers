@@ -9,6 +9,7 @@ public class ItemPanel : MonoBehaviour
     public Sprite image;
     public string titles;
     public string contents;
+   
     private void Start()
     {
         Items items =FindObjectOfType<Items>();
@@ -23,4 +24,7 @@ public class ItemPanel : MonoBehaviour
             UIManager.instance.ItemImage.sprite= image;
         }
     }
+    
+    
 }
+

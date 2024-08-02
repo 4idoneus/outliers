@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     [SerializeField] private DialogueUI dialogueUI;
     public DialogueUI DialogueUI => dialogueUI;
     public IInteractable Interactable {  get; set; }
+   
 
     Rigidbody2D rb;
     public DataManager dataManager;
@@ -30,7 +31,6 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void Start()
     {
-
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         HealthManager.instance.HealthCheck();
@@ -125,8 +125,41 @@ public class PlayerController : MonoBehaviour, IDamageable
             Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.tag == "items")
+        if (collision.gameObject.tag == "bag")
         {
+            UIManager.instance.Title.text = collision.GetComponent<ItemPanel>().titles;
+            UIManager.instance.Content.text = collision.GetComponent<ItemPanel>().contents;
+            UIManager.instance.ItemImage.sprite = collision.GetComponent<ItemPanel>().image;
+            UIManager.instance.ItemPanel.SetActive(true);
+            isAttack = true;
+            Destroy(collision.gameObject);
+            Time.timeScale = 0;
+        }
+        if (collision.gameObject.tag == "shoe")
+        {
+            UIManager.instance.Title.text = collision.GetComponent<ItemPanel>().titles;
+            UIManager.instance.Content.text = collision.GetComponent<ItemPanel>().contents;
+            UIManager.instance.ItemImage.sprite = collision.GetComponent<ItemPanel>().image;
+            UIManager.instance.ItemPanel.SetActive(true);
+            isAttack = true;
+            Destroy(collision.gameObject);
+            Time.timeScale = 0;
+        }
+        if (collision.gameObject.tag == "book")
+        {
+            UIManager.instance.Title.text = collision.GetComponent<ItemPanel>().titles;
+            UIManager.instance.Content.text = collision.GetComponent<ItemPanel>().contents;
+            UIManager.instance.ItemImage.sprite = collision.GetComponent<ItemPanel>().image;
+            UIManager.instance.ItemPanel.SetActive(true);
+            isAttack = true;
+            Destroy(collision.gameObject);
+            Time.timeScale = 0;
+        }
+        if (collision.gameObject.tag == "belt")
+        {
+            UIManager.instance.Title.text = collision.GetComponent<ItemPanel>().titles;
+            UIManager.instance.Content.text = collision.GetComponent<ItemPanel>().contents;
+            UIManager.instance.ItemImage.sprite = collision.GetComponent<ItemPanel>().image;
             UIManager.instance.ItemPanel.SetActive(true);
             isAttack = true;
             Destroy(collision.gameObject);
