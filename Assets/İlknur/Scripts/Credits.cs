@@ -17,10 +17,10 @@ public class Credits : MonoBehaviour
 
     IEnumerator ChangeCredits()
     {
-        while(true)
+        while(currentLineIndex < credits.Length)
         {
             text.text = credits[currentLineIndex];
-            currentLineIndex=currentLineIndex+1% credits.Length;
+            currentLineIndex=currentLineIndex+1%credits.Length;
             yield return new WaitForSeconds(changeTime);
         }
     }
