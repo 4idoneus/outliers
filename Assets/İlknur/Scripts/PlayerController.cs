@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             StartCoroutine(attack());
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             Interactable?.Interact(this);
         }

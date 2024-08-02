@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
         instance = this;
 
     }
-
+    public GameObject gatePanel;
     public GameObject gameOverPanel;
     public GameObject deathPanel;
     public Image ItemImage;

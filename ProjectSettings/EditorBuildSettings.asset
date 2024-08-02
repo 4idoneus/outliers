@@ -15,18 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscene_One.unity
     guid: 9322cc01f9bca7b4f885640cbbf0c2b0
   - enabled: 1
-    path: "Assets/\u0130pek/Scenes/Vilage.unity"
-    guid: 214077d538abf3e46af030b4deaf1f17
+    path: Assets/Scenes/Vilage.unity
+    guid: d2525734de153294c924a532d8322385
   - enabled: 1
-    path: "Assets/\u0130pek/Scenes/Forest.unity"
-    guid: a64538763201f7544a996a494c55d9eb
+    path: Assets/Scenes/Forest.unity
+    guid: 27ab622735845d149b96920f105f9a5e
   - enabled: 1
-    path: "Assets/\u0130pek/Scenes/Babaanne.unity"
-    guid: e95718efd3004764a88ca80797914507
+    path: Assets/Scenes/Babaanne.unity
+    guid: 58b3f61396d97084fa995b7c811e1296
   - enabled: 1
     path: Assets/Scenes/Mektup.unity
     guid: ddb6c39eb631c1b4983d5be4a8023b00
   - enabled: 1
-    path: "Assets/\u0130pek/Scenes/Mektup Sayfa 2.unity"
-    guid: 6f7e6bd9b0da7e142a1ff3732dbe50b8
+    path: Assets/Scenes/Credit.unity
+    guid: 58d26aa7d7c4b864dacf08a22f59b131
   m_configObjects: {}

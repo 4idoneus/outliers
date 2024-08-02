@@ -24,9 +24,17 @@ public class NextScene : MonoBehaviour
             }
             else
             {
-                Debug.Log("Yetersiz puan! Ýhtiyacýnýz olan puan: " + requiredPoints);
+                UIManager.instance.gatePanel.SetActive(true);
+                StartCoroutine(wait());
+
             }
         }
+    }
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(3f);
+        UIManager.instance.gatePanel.SetActive(false);
+
     }
 
     private void LoadNextScene()

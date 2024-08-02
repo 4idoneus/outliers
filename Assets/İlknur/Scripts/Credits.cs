@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -15,14 +14,27 @@ public class Credits : MonoBehaviour
         StartCoroutine(ChangeCredits());
     }
 
-    IEnumerator ChangeCredits()
+    private IEnumerator ChangeCredits()
     {
-        while(currentLineIndex < credits.Length)
+        while (currentLineIndex < credits.Length)
         {
             text.text = credits[currentLineIndex];
-            currentLineIndex=currentLineIndex+1%credits.Length;
+            currentLineIndex++;
             yield return new WaitForSeconds(changeTime);
         }
+
+        // Krediler bittiðinde oyunu kapat
+        ExitGame();
     }
 
+    private void ExitGame()
+    {
+        // Oyun kapanýþ kodu
+        Application.Quit();
+
+        // Editörde çalýþýrken oyunun kapanýþýný simüle et
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    }
 }
