@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void Update()
     {
+        if (DialogueUI.IsOpen) return;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         if (Input.GetButtonDown("Fire1") && !isAttack)

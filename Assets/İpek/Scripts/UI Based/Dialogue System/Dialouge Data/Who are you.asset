@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924b55de478531041a560f49afa787c8, type: 3}
-  m_Name: Yes
+  m_Name: Who are you
   m_EditorClassIdentifier: 
   dialogue:
-  - 'You said yes
-
-    Yehuu'
-  responses: []
+  - Who are you? Where is Grandma?
+  - "Village's dark rituals...\nGuest you have been waiting for...\nI-I don't understand.
+    What are you talking about? \n"
+  responses:
+  - responseText: Learn More
+    dialogueObject: {fileID: 11400000, guid: 6ee69c285e9d71846a064977d248974e, type: 2}
+  speakers: 0100000001000000

@@ -13,14 +13,12 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   dialogue:
-  - 'This is my dialouge!
-
-    OOOO'
-  - 'WTF!
-
-    OOO'
+  - "Wow, after such a long journey from the village, you\u2019ve managed to make
+    it here. Impressive, and perhaps a bit lucky too."
+  - "Being able to carry bread and wood, does that mean you\u2019re saving yourself?
+    Or have you completed one of the village\u2019s dark rituals? You seem like the
+    guest I\u2019ve been waiting for."
   responses:
-  - responseText: Yes
+  - responseText: Ask Who is he?
     dialogueObject: {fileID: 11400000, guid: 0dcd5ad0f5402494aa8557c6a594b4e8, type: 2}
-  - responseText: No
-    dialogueObject: {fileID: 11400000, guid: 6ee69c285e9d71846a064977d248974e, type: 2}
+  speakers: 0000000000000000
