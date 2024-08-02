@@ -127,3 +127,43 @@ https://www.figma.com/board/02wSlow9A2dkejhsQv0u5R/OUA--Unity-92?node-id=0-1&t=Q
     
 - **Diğer Notlar:**
 - N/A
+
+
+### Sprint 3
+
+- **Sprint 3 Toplantıları Notları:**
+  -- “Babaanne” sahnesi, orman sahnesi ve köy sahnesinde çalacak background sesleri tartışıldı.
+  -- Storyline’da tutarlılık yaratmak amacıyla item dağıtım mekanizması tartışıldı.
+
+- Sprint içinde tamamlanması planlanan puan: 139 puan
+
+- **Puan tamamlama mantığı:** Ses efektlerinin eklenmesi (sahne-animasyon) (21p) + Oyun içi item mekaniği (13p) + Storylineın (item bulma, iksir içme vs.) entegre edilmesi - I (21p) + NPC sisteminin ve mekaniklerinin oluşturulması - I (21p) + NPC sisteminin ve mekaniklerinin oluşturulması - II (21p) + Düşman mekaniklerinin ve seviyelerinin oluşturulması (21p) + Final sahnesi - Kurt (Babaanne)'nin mekaniklerinin oluşturulması (21p)
+
+
+- **Daily Scrum:**
+ ![image](https://github.com/user-attachments/assets/285410d3-7af8-4abe-907f-3a73d48c881e)
+
+
+- **Sprint board update:**
+![image](https://github.com/user-attachments/assets/cd4da88b-242c-4d7f-8e00-447afc34943a)
+![image](https://github.com/user-attachments/assets/78cbf23c-6dd8-4f26-9b37-4ad1d94e4073)
+
+
+- **Oyun Ekranları:**
+![image](https://github.com/user-attachments/assets/609b6cd0-2768-477a-9d99-b80e81c5585e)
+
+
+- **Sprint Review:**
+
+*Alınan kararlar:*
+
+ - Oyunun MVP aşamada olduğu ve görevlerin - itemların - düşmanların artırıalarak oyunun geliştirilebileceği konuşuldu.
+ - Oyunun uçtan uca testi gerçekleştirildi ve bitirme formu bilgileri hazırlandı.
+
+*Sprint Review katılımcıları:* Koray Ateşsönmez, İlknur Nazlı Koşar, İpek Naz Sipahi
+
+- **Sprint Retrospective:**
+  - İleride oyunu güçlendirmek ve geliştirmek üzerine toplanılabileceği konuşuldu. Herkesin eline ve emeğine sağlık dileklerinde bulunuldu
+    
+- **Diğer Notlar:**
+- N/A
